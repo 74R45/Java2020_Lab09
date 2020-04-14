@@ -1,7 +1,7 @@
 ## Overview
 
 This is a simple app that interacts with a database containing information about students, courses, and who's enrolled in which course.
-The server is implemented using Service - DAO - Model pattern.
+The server is implemented using `Service - DAO - Model` pattern.
 
 ## DB scheme
 
