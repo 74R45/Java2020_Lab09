@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="com.x74R45.java2020.clientServerApp.model.Discipline" table="disciplines" schema="java2020_db">
+        <id name="id" type="long">
+            <column name="id"/>
+            <generator class="increment"/>
+        </id>
+        <property name="name" type="string">
+            <column name="name" length="45" not-null="true" unique="true"/>
+        </property>
+        <property name="credits" type="java.math.BigDecimal">
+            <column name="credits" length="3" scale="1" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
