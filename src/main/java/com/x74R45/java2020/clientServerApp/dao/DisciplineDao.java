@@ -40,18 +40,18 @@ public class DisciplineDao {
         return res;
     }
 
-    public void addDiscipline(String name, BigDecimal course) {
+    public void addDiscipline(String name, BigDecimal credits) {
         Session session = sessionFactory.openSession();
-        Discipline newDiscipline = new Discipline(name, course);
+        Discipline newDiscipline = new Discipline(name, credits);
         session.beginTransaction();
         session.save(newDiscipline);
         session.getTransaction().commit();
         session.close();
     }
 
-    public void updateDiscipline(long id, String name, BigDecimal course) {
+    public void updateDiscipline(long id, String name, BigDecimal credits) {
         Session session = sessionFactory.openSession();
-        Discipline Discipline = new Discipline(id, name, course);
+        Discipline Discipline = new Discipline(id, name, credits);
         session.beginTransaction();
         session.update(Discipline);
         session.getTransaction().commit();

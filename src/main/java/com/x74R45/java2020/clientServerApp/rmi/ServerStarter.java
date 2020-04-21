@@ -1,4 +1,4 @@
-package com.x74R45.java2020.clientServerApp;
+package com.x74R45.java2020.clientServerApp.rmi;
 
 import com.x74R45.java2020.clientServerApp.service.*;
 
